@@ -7,7 +7,7 @@ This is the numerical data of the paper [1, Section IV].
 ## Description
 The files come in three formats in total: `.txt`, `.npy` and `.ext`.
 
-Files with formats .txt and .npy are suggested to be loaded by `numpy` in `python`.
+Files with formats `.txt` and `.npy` are suggested to be loaded by `numpy` in `python`.
 
 The file with the format `.ext` is specially processed by polyhedron computation methods including `lrs` [2,3], `qhull` [4,5] and `cdd` [6,7] (or `pycddlib` [8] in `Python`).
 
