@@ -67,11 +67,15 @@ The files here correspond to the result in the `first` row of [1, Table I].
 ### Directory `Table_I_-0.0925001031`
 The files here correspond to the result in the `second` row of [1, Table I].
 
+Note that the entropic vector here yields the result after the transformation $T$ mentioned in [1, Section IV.B].
+
 ### Directory `Table_I_0.0281316527`
 The files here correspond to the result in the `third` row of [1, Table I].
 
 ### Directory `Table_I_0.0288304141`
 The files here correspond to the result in the `fourth` row of [1, Table I].
+
+Note that the entropic vector here yields the result after the transformation $T$ mentioned in [1, Section IV.B].
 
 
 ## Directory `Section_IV_C`
