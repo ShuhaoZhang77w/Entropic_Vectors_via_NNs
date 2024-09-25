@@ -7,17 +7,17 @@ This is the numerical data of the paper [1, Section IV].
 ## Description
 The files come in three formats: `.txt`, `.npy`, and `.ext`.
 
-Files with formats `.txt` and `.npy` are suggested to be loaded by `numpy` in `python`.
+To load files with formats `.txt` and `.npy`, please use `numpy` in `python`.
 
 The file with the format `.ext` is specially processed by polyhedron computation methods including `lrs` [2,3], `qhull` [4,5] and `cdd` [6,7] (or `pycddlib` [8] in `Python`).
 
-Please note that the elements of the entropic vector in data are placed according to [1, Eq. (4)].
+Please note that the elements of an entropic vector are indexed according to [1, Eq. (4)].
 
-The data of joint PMFs have the `numpy` shape of:
+The joint PMFs data have the following  `numpy` shape:
 ```
 (1,4,4,4,4)
 ```
-To compute the marginal PMFs from the given joint PMF data, the following code is suggested:
+To compute the marginal PMFs from a given joint PMF, the following is suggested:
 ```
 #  'probs' is the joint PMF data with numpy shape (1,4,4,4,4)
 p1 = np.sum(probs, axis=(-2, -3, -4))
@@ -57,27 +57,27 @@ The files here correspond to the result of `Target 3` in [1, Figure 1].
 ## Directory `Section_IV_B`
 The files in this directory correspond to [1, Section IV.B], more specifically, Table I.
 
-For example, in directory `Table_I_-0.0893733002`, `result.txt` contains the score/index result, `h.txt` contains the entropic vector yileding this score/index result, and `p.txt` contains the PMF realizing this entropic vector.
+For example, in directory `Table_I_-0.0893733002`, `result.txt` contains the score result, `h.txt` contains the entropic vector yileding this score result, and `p.txt` contains the PMF realizing this entropic vector.
 
-Please note that the instance of Ingleton inequality used here is [1, Eq. (13)].
+Please note that the instance of Ingleton inequality used in these experiments is [1, Eq. (13)].
 
 ### Directory `Table_I_-0.0893733002`
-The files here correspond to the result in the first row of [1, Table I].
+The files here correspond to the result in the `first` row of [1, Table I].
 
 ### Directory `Table_I_-0.0925001031`
-The files here correspond to the result in the second row of [1, Table I].
+The files here correspond to the result in the `second` row of [1, Table I].
 
 ### Directory `Table_I_0.0281316527`
-The files here correspond to the result in the third row of [1, Table I].
+The files here correspond to the result in the `third` row of [1, Table I].
 
 ### Directory `Table_I_0.0288304141`
-The files here correspond to the result in the fourth row of [1, Table I].
+The files here correspond to the result in the `fourth` row of [1, Table I].
 
 
 ## Directory `Section_IV_C`
 The file in this directory corresponds to [1, Section IV.C], more specifically, Table II.
 
-The only file `Table_II_72.0437.ext` in this directory contains **2585** vertices which yields the result `72.0437%` in [1, Table II].
+The only file `Table_II_72.0437.ext` in this directory contains **2585** vertices, the convex hull of these vertices is the polytope which yields the result `72.0437%` in [1, Table II].
 
 To compute the volume of this polytope, one is highly suggested to use `lrs` with the `Estimation` feature.
 Thus, the end description of the file `Table_II_72.0437.ext` constains the following configuration:
