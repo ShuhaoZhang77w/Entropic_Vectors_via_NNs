@@ -5,7 +5,7 @@ This is the numerical data of the paper [1, Section IV].
 
 
 ## Description
-The files come in three formats in total: `.txt`, `.npy` and `.ext`.
+The files come in three formats: `.txt`, `.npy`, and `.ext`.
 
 Files with formats `.txt` and `.npy` are suggested to be loaded by `numpy` in `python`.
 
@@ -42,7 +42,7 @@ p234 = np.sum(probs, axis=(-1))
 ## Directory `Section_IV_A`
 The files in this directory correspond to [1, Section IV.A], more specifically, Figure 1.
 
-For example, in directory `Figure_1_Target_1`, `curve.npy` contains the data of convergence curve, `dnorm.txt` contains the normalized distance result, `h.txt` contains the entropic vector yileding this normalized distance result, and `p.npy` contains the PMF realizing this entropic vector.
+For example, in directory `Figure_1_Target_1`, `curve.npy` contains the data of convergence curve, `dnorm.txt` contains the normalized distance result, `h.txt` contains the entropic vector yielding this normalized distance result, and `p.npy` contains the PMF realizing this entropic vector.
 
 ### Directory `Figure_1_Target_1`
 The files here correspond to the result of `Target 1` in [1, Figure 1].
@@ -54,10 +54,10 @@ The files here correspond to the result of `Target 2` in [1, Figure 1].
 The files here correspond to the result of `Target 3` in [1, Figure 1].
 
 
-## Directory `Section_IV_A`
+## Directory `Section_IV_B`
 The files in this directory correspond to [1, Section IV.B], more specifically, Table I.
 
-For example, in directory `Table_I_-0.0893733002`, `result.txt` contains the score/index result, `h.txt` contains the entropic vector yileding this socre/index result, and `p.txt` contains the PMF realizing this entropic vector.
+For example, in directory `Table_I_-0.0893733002`, `result.txt` contains the score/index result, `h.txt` contains the entropic vector yileding this score/index result, and `p.txt` contains the PMF realizing this entropic vector.
 
 Please note that the instance of Ingleton inequality used here is [1, Eq. (13)].
 
@@ -74,10 +74,10 @@ The files here correspond to the result in the third row of [1, Table I].
 The files here correspond to the result in the fourth row of [1, Table I].
 
 
-## Directory `Section_IV_A`
+## Directory `Section_IV_C`
 The file in this directory corresponds to [1, Section IV.C], more specifically, Table II.
 
-The only file `Table_II_72.0437.ext` in this directory contains **2585** vertices which yields the result `72.0437%` in [1, Tabel II].
+The only file `Table_II_72.0437.ext` in this directory contains **2585** vertices which yields the result `72.0437%` in [1, Table II].
 
 To compute the volume of this polytope, one is highly suggested to use `lrs` with the `Estimation` feature.
 Thus, the end description of the file `Table_II_72.0437.ext` constains the following configuration:
@@ -86,7 +86,7 @@ maxdepth 13
 estimates 13
 volume
 ```
-Quaoting [3], this configuration means that *this will cause lrs to perform 13 random probes from each node of the tree at depth 13*.
+Quoting [3], this configuration means that *this will cause lrs to perform 13 random probes from each node of the tree at depth 13*.
 
 The above `Estimation` procedure may take several weeks.
 For more discusstions of this result, please see [9], which is the extended version of [1].
