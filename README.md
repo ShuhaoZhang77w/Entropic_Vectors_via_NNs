@@ -1,7 +1,7 @@
 # Entropic_Vectors_via_NNs
 
 ## Introduction
-This is the numerical data of the paper [1, Section IV].
+This is the numerical data of [1, Section IV].
 
 
 ## Description
@@ -9,7 +9,7 @@ The files come in three formats: `.txt`, `.npy`, and `.ext`.
 
 To load files with formats `.txt` and `.npy`, please use `numpy` in `python`.
 
-The file with the format `.ext` is specially processed by polyhedron computation methods including `lrs` [2,3], `qhull` [4,5] and `cdd` [6,7] (or `pycddlib` [8] in `Python`).
+The file with the format `.ext` should be processed by polyhedron computation methods including `lrs` [2,3], `qhull` [4,5] and `cdd` [6,7] (or `pycddlib` [8] in `Python`).
 
 Please note that the elements of an entropic vector are indexed according to [1, Eq. (4)].
 
@@ -67,7 +67,7 @@ The files here correspond to the result in the `first` row of [1, Table I].
 ### Directory `Table_I_-0.0925001031`
 The files here correspond to the result in the `second` row of [1, Table I].
 
-Note that the entropic vector here yields the result after the transformation $T$ mentioned in [1, Section IV.B].
+Please note that the entropic vector here yields the result after the transformation $T$ mentioned in [1, Section IV.B].
 
 ### Directory `Table_I_0.0281316527`
 The files here correspond to the result in the `third` row of [1, Table I].
@@ -75,7 +75,7 @@ The files here correspond to the result in the `third` row of [1, Table I].
 ### Directory `Table_I_0.0288304141`
 The files here correspond to the result in the `fourth` row of [1, Table I].
 
-Note that the entropic vector here yields the result after the transformation $T$ mentioned in [1, Section IV.B].
+Please note that the entropic vector here yields the result after the transformation $T$ mentioned in [1, Section IV.B].
 
 
 ## Directory `Section_IV_C`
@@ -84,7 +84,7 @@ The file in this directory corresponds to [1, Section IV.C], more specifically, 
 The only file `Table_II_72.0437.ext` in this directory contains **2585** vertices, the convex hull of these vertices is the polytope which yields the result `72.0437%` in [1, Table II].
 
 To compute the volume of this polytope, one is highly suggested to use `lrs` with the `Estimation` feature.
-Thus, the end description of the file `Table_II_72.0437.ext` constains the following configuration:
+For this reason, the end description of the file `Table_II_72.0437.ext` constains the following configuration:
 ```
 maxdepth 13
 estimates 13
@@ -92,8 +92,8 @@ volume
 ```
 Quoting [3], this configuration means that *this will cause lrs to perform 13 random probes from each node of the tree at depth 13*.
 
-The above `Estimation` procedure may take several weeks.
-For more discusstions of this result, please see [9], which is the extended version of [1].
+The above `Estimation` procedure may take several weeks, emprically.
+For more discusstions of this result, please refer to [9], which is the extended version of [1].
 
 
 ## Reference
